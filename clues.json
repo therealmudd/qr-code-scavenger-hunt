@@ -19,7 +19,7 @@
     "id": 3,
     "type": "clue",
     "title": "At the Photobooth",
-    "message": "Did you remember to do what I said?",
+    "message": "Did you remember to do what I said? (one word)",
     "answer": "smile",
     "next_message": "You're doing great, traveller! All this running around must be making you tired.\n\nThere's a place to quench your thirst. You might need a token for a drink and a flower for my note."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "type": "clue",
     "title": "At the Drinks Bar",
-    "message": "Please enter the last clue:",
+    "message": "What did use to get a drink? (one word)",
     "answer": "flower",
     "next_message": "You found my last note.\n\nThis is where I found a special drink and it turned me into a human! You should come and find me in the garden. I'm short and fierce and wearing a red dress. I'll know you're the traveler when you ask me my name."
   }
