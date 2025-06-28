@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ clue.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>{{ clue.title }}</h1>
+    <p>{{ clue.message }}</p>
+
+    {% if clue.hint %}
+      <p class="hint">Hint: {{ clue.hint }}</p>
+    {% endif %}
+
+    {% if unlocked %}
+      <hr>
+      <p><strong>{{ clue.next_message }}</strong></p>
+    {% else %}
+      {% if error %}
+        <p class="error">{{ error }}</p>
+      {% endif %}
+      <form method="POST">
+        <input type="text" name="answer" placeholder="Password..." required>
+        <button type="submit">Unlock Next Clue</button>
+      </form>
+    {% endif %}
+  </div>
+</body>
+</html>
